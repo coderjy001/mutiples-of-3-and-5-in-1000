@@ -1,0 +1,20 @@
+x = 1
+x3 = 0
+x5 = 0
+a=0
+m3 = list(range(0))
+m5 = list(range(0))
+while x3 <= 1000:
+  x3 = 3*x
+  if x3 <= 1000:
+    m3.append(x3)
+    x = x + 1
+x=1
+while x5 <= 1000:
+  x5 = 5*x
+  if x5 <= 1000:
+    m5.append(x5)
+    x = x + 1
+m3.extend(m5)
+a = set(m3)
+print(sum(a)-1000)
